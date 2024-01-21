@@ -1,10 +1,255 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/f14a3b3c09.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   Jai shri ganeshay namh:, jai shri ram
+    
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html">Brand</a>
+            </div>
+            <div class="menu-bg">
+                <div class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+                <span class="overlay"></span>
+                <nav class="navbar" id="navbar">
+                    <ul class="menu" id="menu">
+                        <li class="menu-item"><a href="index.html" class="menu-link">HOME</a></li>
+                        <li class="menu-item menu-dropdown">
+                            <span class="menu-link" data-toggle="submenu">SERVICES<i class="fa-solid fa-chevron-down"></i></span>
+                            <ul class="submenu">
+                            <li class="submenu-item"><a href="#" class="submenu-link">Services 1</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">Services 1</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">Services 1</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">Services 1</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="#" class="menu-link">HIRE DEVELOPERS</a></li>
+                        <li class="menu-item"><a href="contact.html" class="menu-link">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+     </header>
+
+     <div class="hero-slider">
+        <div class="container two-cols-flex">
+            <div class="left">
+                <h1>Transforming your ideas into <span class="heading-color">powerful</span> software solutions </h1>
+                <p>Flyaps is a team of tech-driven Python and React engineers who create innovative products. Technicians to the core,</p>
+                <a href="#" class="button">Get a Quote now</a>
+            </div>
+            <div class="right"><img src="images/hero-image.png" alt="hero-image"></div>
+        </div>
+        <div id="particle-canvas"></div>
+     </div>
+
+     <div class="about-section">
+        <div class="container">
+            <div class="about-container">
+                <div class="heading-box">
+                    <h2>About Us</h2>
+                    <span><p class="sub-heading">Helping You Design Success</p></span>
+                </div>
+
+                <div class="two-cols-flex mt-16">
+                    <div class="left">
+                        <p>Welcome to OpenXcell, where innovation is brought to life. For over 14 years, 
+                           we have excelled at providing cutting-edge software development solutions that redefine possibilities.
+                           From software consulting services to comprehensive technology roadmaps to end-to-end development, 
+                           OpenXcell delivers all the services you need for your software projects. Our future-ready custom software 
+                           helps you achieve real business value. Your success is our mission, and we're here to make it a reality. 
+                           Let's embark on a digital transformation journey together!</p>
+                    </div>
+                    <div class="right">
+                        <div class="about-company-experience">
+                            <div>
+                                <h2>14+</h2>
+                                <p class="title js-count-up" data-value="3456"></p>
+                                <p>Years Of Experience</p>
+                            </div>
+                            <div>
+                                <h2>10+</h2>
+                                <p>Happy Clients</p>
+                            </div>
+                            <div>
+                                <h2>20+</h2>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div>
+                                <h2>40+</h2>
+                                <p>Skilled Engineers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="vision-mission-knowledge">
+                <div class="inner-box">
+                    <div class="icon-bg"><img src="./images/vision.svg" alt="vision"></div>
+                    <h4>Vision</h4>
+                    <p>To be one-stop-shop IT Solutions Provider Company, with the niche forte of delivering timely, quality and cost effective solutions to clients, without any geographical, regional or language barriers.</p>
+                </div>
+                <div class="inner-box">
+                    <div class="icon-bg"><img src="./images/mission.svg" alt="vision"></div>
+                    <h4>Mission</h4>
+                    <p>Our MISSION is to CREATE innovative products and DELIVER excellence in services with constant emphasis on engineering, process quality and customer satisfaction - We ADD value to your business.</p>
+                </div>
+                <div class="inner-box">
+                    <div class="icon-bg"><img src="./images/knowledge.svg" alt="vision"></div>
+                    <h4>Knowledge</h4>
+                    <p>To be one-stop-shop IT Solutions Provider Company, with the niche forte of delivering timely, quality and cost effective solutions to clients, without any geographical, regional or language barriers.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+     </div>
+    
+     <div class="services-bg">
+        <div class="container">
+            <div class="heading-box">
+                <h2>Services</h2>
+                <span><p class="sub-heading">Helping You Design Success</p></span>
+            </div>
+
+            <div class="services-container">
+                <div class="inner-box">
+                    <div class="icon-bg"><img src="images/web-development.png" alt="web-development"></div>
+                    <h4>Web development</h4>
+                    <p>We deliver fast, innovative, and responsive web solutions, including scalable web applications <a href="#">Read More</a></p>
+                </div>
+                <div class="inner-box">
+                    <div class="icon-bg"><img src="images/web-development.png" alt="web-development"></div>
+                    <h4>Mobile development</h4>
+                    <p>Usable and easy-to-navigate mobile applications are our specialty. We build functional and secure <a href="#">Read More</a></p>
+                </div>
+                <div class="inner-box">
+                    <div class="icon-bg"><img src="images/web-development.png" alt="web-development"></div>
+                    <h4>Custom development</h4>
+                    <p>Cloud computing, Internet of Things, Big Data, and more. With cutting-edge technologies, we can build a <a href="#">Read More</a></p>
+                </div>
+                <div class="inner-box">
+                    <div class="icon-bg"><img src="images/web-development.png" alt="web-development"></div>
+                    <h4>Product Design</h4>
+                    <p>Design goes far beyond the looks - it is a complex process determining your application’s infrastructure and success. <a href="#">Read More</a></p>
+                </div>
+                <div class="inner-box">
+                    <div class="icon-bg"><img src="images/web-development.png" alt="web-development"></div>
+                    <h4>IT Outsourcing</h4>
+                    <p>Looking for remote development solutions? Discover how our nearshore, offshore and technology consulting services empower companies <a href="#">Read More</a></p>
+                </div>
+                <div class="inner-box">
+                    <div class="icon-bg"><img src="images/web-development.png" alt="web-development"></div>
+                    <h4>Cloud & SaaS solutions</h4>
+                    <p>We can support your business goals with scalable Cloud and Software-as-a-Service solutions running on Microsoft Azure and Amazon Web Services. <a href="#">Read More</a></p>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <div class="testimonials-bg">
+        <div class="container">
+
+            <div class="heading-box">
+                <h2>Client Testimonials</h2>
+                <span><p class="sub-heading">Helping You Design Success</p></span>
+            </div>
+
+            <div class="slide-container-box" data-autoplay="true">
+                <div class="slide"> 
+                    <div class="testimonilas">
+                        <div class="testimonilas-inner">
+                            <div class="client-photo"><img src="images/kesav.png" alt="kesav"></div>
+                            <div class="client-name-address">
+                                <h4>King Kesav</h4>
+                                <p>Indore, India</p>
+                            </div>
+                            
+                            <div class="content">
+                                <p><i class="fa-solid fa-quote-left"></i>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.<i class="fa-solid fa-quote-right"></i></p>
+                            </div>
+    
+                            <div class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></div>
+                            <div class="shape"><img src="images/shape.png" alt="shape"></div>
+                        </div>
+                </div>
+                </div>
+                <div class="slide">
+                    <div class="testimonilas">
+                        <div class="testimonilas-inner">
+                            <div class="client-photo"><img src="images/mukesh.png" alt="kesav"></div>
+                            <div class="client-name-address">
+                                <h4>Mukesh Mishra</h4>
+                                <p>Mumbai, India</p>
+                            </div>
+                            
+                            <div class="content">
+                                <p><i class="fa-solid fa-quote-left"></i>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.<i class="fa-solid fa-quote-right"></i></p>
+                            </div>
+    
+                            <div class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></div>
+                            <div class="shape"><img src="images/shape.png" alt="shape"></div>
+                        </div>
+                </div>
+                </div>
+                <div class="slide">
+                    <div class="testimonilas">
+                        <div class="testimonilas-inner">
+                            <div class="client-photo"><img src="images/mukesh.png" alt="kesav"></div>
+                            <div class="client-name-address">
+                                <h4>Mukesh Mishra</h4>
+                                <p>Mumbai, India</p>
+                            </div>
+                            
+                            <div class="content">
+                                <p><i class="fa-solid fa-quote-left"></i>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.<i class="fa-solid fa-quote-right"></i></p>
+                            </div>
+    
+                            <div class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></div>
+                            <div class="shape"><img src="images/shape.png" alt="shape"></div>
+                        </div>
+                </div>
+                </div>
+                <button class="prev" onclick="prev()"><i class="fa fa-angle-left"></i></button>
+                <button class="next" onclick="next()"><i class="fa fa-angle-right"></i></button>
+            </div>
+            <div class="dots_container" id="indicator"></div>
+        </div>
+       
+     </div>
+
+     <div class="footer">
+        <div class="container">
+            <div class="two-cols-flex">
+                <div class="left">
+                    <p>© 2023 Company Name. All Rights Reserved.</p>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <script type="text/javascript" src="js/particlesAnimation.js"></script>
+     <script type="text/javascript" src="js/navigation.js"></script>
+     <script type="text/javascript" src="js/carousel.js"></script>
+     <script type="text/javascript" src="js/custom.js"></script> 
+
+    
 </body>
 </html>
