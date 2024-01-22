@@ -1,0 +1,227 @@
+$radius-sx:4px;
+$transition:transform 0.5s;
+
+$small:576px;
+$medium:768px;
+$large:992px;
+$x-large:1200px;
+$xx-large:1400px;
+
+@mixin scale {
+    transform: scale(1.05);
+  }
+@mixin blue-gradient{
+    background: radial-gradient(circle, rgb(11, 64, 107) 0%, rgb(5, 46, 79) 100%);
+}
+@mixin light-blue-shadow{
+box-shadow: 0 0 30px 0 rgba(0, 96, 174, 0.25);
+}
+@mixin light-shadow{
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
+}
+
+.justify{
+    text-align: justify;
+}
+.gap-3{
+    gap: 3rem !important;
+}
+.mt-8{
+    margin-top: 16px;
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+.mt-32{
+    margin-top: 32px;
+}
+
+a{
+    text-decoration: none;
+}
+div{
+    box-sizing: border-box;
+}
+.theme-bg{
+    background: $background-primary;
+}
+
+.light-gray-bg{
+    background: $light-gray-bg;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    padding:0 1rem;
+}
+
+.full-width-container{
+    width: 100%;
+    padding: 32px 0;
+}
+
+.two-cols-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    width: 100%;
+    @media screen and (min-width:$medium) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.three-cols-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.25rem;
+    width: 100%;
+    @media screen and (min-width:$medium) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+.heading-box{
+    margin: auto;
+    text-align: center;
+    div{
+        display: inline-block;
+        position: relative;
+        padding: 0 32px;  
+        margin-top: 5px;
+        @media screen and (min-width:$medium) {
+            padding: 0 100px;
+        }
+        &::before{
+            position: absolute;
+            display: block;
+            content: '';
+            height:1px ;
+            background: $heading-secondary-color;
+            left: 0;
+            top:calc(50% - 1px);
+            width: 50%;
+            z-index: 1;
+        }
+        &::after{
+            position: absolute;
+            display: block;
+            content: '';
+            height:1px ;
+            background: $heading-secondary-color;
+            right: 0;
+            top:calc(50% - 1px);
+            width: 50%;
+            z-index: 1;
+        }
+    }
+    .sub-heading{
+        color: $heading-secondary-color;
+        font-size: 16px;
+        font-weight: 500;
+        position: relative;
+        background: #fff;
+        z-index: 2;
+        padding: 0 12px;
+    }
+
+    &.heading-white{
+        h2{
+            color: $white-text-color;
+        }
+        div{
+            &::after, &::before{
+                background: $white-text-color;
+            }
+            .sub-heading{
+                background: $background-primary;
+                color: $white-text-color;
+            }
+          
+        }  
+    }
+    &.heading-light-gray{
+        .sub-heading{
+            background: $light-gray-bg;
+        }
+    }
+
+}
+
+.card{
+    width: 100%;
+    height: auto;
+    border: solid 1px #ddd;
+    border-radius:$radius-sx;
+    padding: 1.5rem;
+    transition: $transition;
+   
+    .icon{
+        height: 100px;
+        width: 100%;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    h4{
+        margin-top: 1.5rem;
+    }
+    p{
+        margin-top: 0.75rem;
+    }
+
+&.card-white-text{
+    h4, p, a{
+        color: $white-text-color;
+    }
+    a{
+        text-decoration: underline;
+    }
+
+}
+}
+
+.inner-page-top{
+    background: $background-primary;
+    padding-top: 56px;
+    padding-bottom: 30px;
+    height: 320px;
+    .container{
+        padding-top: 80px;
+    }
+    p{
+        color: $white-text-color;
+        margin-top: 0.75rem;
+    }
+}
+
+.tech-box-small{
+    border: solid 1px #ddd;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+
+    .tech-icon-row{
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+    .icon-column{
+        margin-top: 1rem;
+        text-align: center;
+        .tech-icon{
+        height: 60px;
+        margin: auto;
+        text-align: center;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+        }
+    }
+    }
+}

@@ -6,13 +6,22 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <script src="https://kit.fontawesome.com/f14a3b3c09.js" crossorigin="anonymous"></script>
+    <style>
+        .shree-ram{
+            margin: 50px auto 0 auto;
+            width: 100%;
+            text-align: center;
+            
+        }
+        .shree-ram img{max-width: 100%;}
+    </style>
 </head>
 <body>
     
     <header class="header" id="header">
         <div class="container">
             <div class="logo">
-                <a href="./index.html">Brand</a>
+                <a href="./index.html"><img src="./images/logo.svg" alt="logo"></a>
             </div>
             <div class="menu-bg">
                 <div class="burger" id="burger">
@@ -23,17 +32,19 @@
                 <span class="overlay"></span>
                 <nav class="navbar" id="navbar">
                     <ul class="menu" id="menu">
-                        <li class="menu-item"><a href="index.html" class="menu-link">HOME</a></li>
+                        <li class="menu-item"><a href="./index.html" class="menu-link">HOME</a></li>
                         <li class="menu-item menu-dropdown">
                             <span class="menu-link" data-toggle="submenu">SERVICES<i class="fa-solid fa-chevron-down"></i></span>
                             <ul class="submenu">
-                            <li class="submenu-item"><a href="#" class="submenu-link">Services 1</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-link">Services 1</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-link">Services 1</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-link">Services 1</a></li>
+                                <li class="submenu-item"><a href="services/web-development.html" class="submenu-link">Web Development</a></li>
+                                <li class="submenu-item"><a href="services/mobile-app-development.html" class="submenu-link">Mobile App Development</a></li>
+                                <li class="submenu-item"><a href="services/custom-software-development.html" class="submenu-link">Custom Software Development</a></li>
+                                <li class="submenu-item"><a href="services/UI-UX-design.html" class="submenu-link">UI/UX Design</a></li>
+                                <li class="submenu-item"><a href="services/it-outsourcing.html" class="submenu-link">IT Outsourcing</a></li>
+                                <li class="submenu-item"><a href="services/cloud-saas-solution.html" class="submenu-link">Cloud & SaaS solutions</a></li>
                             </ul>
                         </li>
-                        <li class="menu-item"><a href="#" class="menu-link">HIRE DEVELOPERS</a></li>
+                        <li class="menu-item"><a href="hire-developers.html" class="menu-link">HIRE DEVELOPERS</a></li>
                         <li class="menu-item"><a href="contact.html" class="menu-link">CONTACT US</a></li>
                     </ul>
                 </nav>
@@ -41,39 +52,40 @@
         </div>
      </header>
 
+     <div class="shree-ram">
+        <img src="images/shree-ram-ji.png" alt="Shree Ram">
+    </div>
      <div class="hero-slider">
-        <div class="container two-cols-flex">
+        <div class="container">
+            <div class="two-cols-flex">
             <div class="left">
-                <h1>Transforming your ideas into <span class="heading-color">powerful</span> software solutions </h1>
-                <p>Flyaps is a team of tech-driven Python and React engineers who create innovative products. Technicians to the core,</p>
+                <h1>Turning your concepts into effective software solutions</h1>
+                <p>Welcome to Pisyst, the place where knowledge and creativity meet! We are a group of incredibly gifted designers and software developers that love transforming concepts into amazing digital experiences.</p>
                 <a href="#" class="button">Get a Quote now</a>
             </div>
             <div class="right"><img src="images/hero-image.png" alt="hero-image"></div>
         </div>
+        </div>
         <div id="particle-canvas"></div>
      </div>
 
-     <div class="about-section">
+     <div class="full-width-container">
         <div class="container">
             <div class="about-container">
                 <div class="heading-box">
                     <h2>About Us</h2>
-                    <span><p class="sub-heading">Helping You Design Success</p></span>
+                    <div><p class="sub-heading">Aiding You in Success Story</p></div>
                 </div>
 
-                <div class="two-cols-flex mt-16">
-                    <div class="left">
-                        <p>Welcome to OpenXcell, where innovation is brought to life. For over 14 years, 
-                           we have excelled at providing cutting-edge software development solutions that redefine possibilities.
-                           From software consulting services to comprehensive technology roadmaps to end-to-end development, 
-                           OpenXcell delivers all the services you need for your software projects. Our future-ready custom software 
-                           helps you achieve real business value. Your success is our mission, and we're here to make it a reality. 
-                           Let's embark on a digital transformation journey together!</p>
+                <div class="two-cols-grid gap-3 mt-32">
+                    <div class="left justify">
+                        <p>Welcome to Pisyst, where inventive technology is combined with precision-crafted solutions. We take great satisfaction in providing innovative IT solutions that help organisations advance into the future. We are a premier IT company.</p>
+                        <p class="mt-8">Pisyst is more than just a technology supplier; we are your strategic partner as you navigate the ever-changing digital landscape. Our team of knowledgeable experts is committed to developing custom IT solutions that are made to fit the particular requirements of your company.</p>
                     </div>
                     <div class="right">
-                        <div class="about-company-experience">
+                        <div class="two-cols-grid experience-box">
                             <div>
-                                <h2>14+</h2>
+                                <h2>02+</h2>
                                 <p class="title js-count-up" data-value="3456"></p>
                                 <p>Years Of Experience</p>
                             </div>
@@ -82,73 +94,73 @@
                                 <p>Happy Clients</p>
                             </div>
                             <div>
-                                <h2>20+</h2>
+                                <h2>12+</h2>
                                 <p>Projects Completed</p>
                             </div>
                             <div>
-                                <h2>40+</h2>
+                                <h2>10+</h2>
                                 <p>Skilled Engineers</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-            <div class="vision-mission-knowledge">
-                <div class="inner-box">
-                    <div class="icon-bg"><img src="./images/vision.svg" alt="vision"></div>
+            <div class="three-cols-grid mt-32">
+                <div class="card">
+                    <div class="icon"><img src="./images/vision.svg" alt="vision"></div>
                     <h4>Vision</h4>
-                    <p>To be one-stop-shop IT Solutions Provider Company, with the niche forte of delivering timely, quality and cost effective solutions to clients, without any geographical, regional or language barriers.</p>
+                    <p>With an emphasis on innovation, quality, and the use of ethical business strategies, our VISION is to be a worldwide leader in IT solutions and services, ultimately aiming to give back to society.</p>
                 </div>
-                <div class="inner-box">
-                    <div class="icon-bg"><img src="./images/mission.svg" alt="vision"></div>
+                <div class="card">
+                    <div class="icon"><img src="./images/mission.svg" alt="vision"></div>
                     <h4>Mission</h4>
-                    <p>Our MISSION is to CREATE innovative products and DELIVER excellence in services with constant emphasis on engineering, process quality and customer satisfaction - We ADD value to your business.</p>
+                    <p>Our goal is to always prioritise engineering, process quality, and customer happiness while creating and delivering exceptional products and services that will add value to your company.</p>
                 </div>
-                <div class="inner-box">
-                    <div class="icon-bg"><img src="./images/knowledge.svg" alt="vision"></div>
+                <div class="card">
+                    <div class="icon"><img src="./images/knowledge.svg" alt="vision"></div>
                     <h4>Knowledge</h4>
-                    <p>To be one-stop-shop IT Solutions Provider Company, with the niche forte of delivering timely, quality and cost effective solutions to clients, without any geographical, regional or language barriers.</p>
+                    <p>The company's goal is to become a one-stop shop for IT solutions, specialising in providing clients with fast, high-quality, and reasonably priced solutions, regardless of their location or language barrier.</p>
                 </div>
             </div>
         </div>
         </div>
      </div>
     
-     <div class="services-bg">
+     <div class="full-width-container theme-bg">
         <div class="container">
-            <div class="heading-box">
+            <div class="heading-box heading-white">
                 <h2>Services</h2>
-                <span><p class="sub-heading">Helping You Design Success</p></span>
+                <div><p class="sub-heading">Helping You Design Success</p></div>
             </div>
 
-            <div class="services-container">
-                <div class="inner-box">
-                    <div class="icon-bg"><img src="images/web-development.png" alt="web-development"></div>
+            <div class="three-cols-grid mt-32">
+                <div class="card services-card card-white-text">
+                    <div class="icon"><img src="images/tech-icon/software-development.svg" alt="web-development"></div>
                     <h4>Web development</h4>
-                    <p>We deliver fast, innovative, and responsive web solutions, including scalable web applications <a href="#">Read More</a></p>
+                    <p>We provide scalable web apps along with quick, creative, and responsive online solutions.<a href="#">Read More</a></p>
                 </div>
-                <div class="inner-box">
-                    <div class="icon-bg"><img src="images/web-development.png" alt="web-development"></div>
-                    <h4>Mobile development</h4>
-                    <p>Usable and easy-to-navigate mobile applications are our specialty. We build functional and secure <a href="#">Read More</a></p>
+                <div class="card services-card card-white-text">
+                    <div class="icon"><img src="images/tech-icon/mobile-app.svg" alt="web-development"></div>
+                    <h4>Mobile App development</h4>
+                    <p>We specialise in creating mobile applications that are intuitive and easy to use. We create secure and useful mobile apps.<a href="#">Read More</a></p>
                 </div>
-                <div class="inner-box">
-                    <div class="icon-bg"><img src="images/web-development.png" alt="web-development"></div>
-                    <h4>Custom development</h4>
-                    <p>Cloud computing, Internet of Things, Big Data, and more. With cutting-edge technologies, we can build a <a href="#">Read More</a></p>
+                <div class="card services-card card-white-text">
+                    <div class="icon"><img src="images/tech-icon/custom-software-development.svg" alt="web-development"></div>
+                    <h4>Custom Software Development</h4>
+                    <p>Seeking for options for remote development? Learn how our technology, offshore, and nearshore consulting services help businesses in the US, Canada, Europe<a href="#">Read More</a></p>
                 </div>
-                <div class="inner-box">
-                    <div class="icon-bg"><img src="images/web-development.png" alt="web-development"></div>
-                    <h4>Product Design</h4>
+                <div class="card services-card card-white-text">
+                    <div class="icon"><img src="images/tech-icon/product-design.svg" alt="web-development"></div>
+                    <h4>UI/UX Design</h4>
                     <p>Design goes far beyond the looks - it is a complex process determining your application’s infrastructure and success. <a href="#">Read More</a></p>
                 </div>
-                <div class="inner-box">
-                    <div class="icon-bg"><img src="images/web-development.png" alt="web-development"></div>
+                <div class="card services-card card-white-text">
+                    <div class="icon"><img src="images/tech-icon/outsourcing.svg" alt="web-development"></div>
                     <h4>IT Outsourcing</h4>
-                    <p>Looking for remote development solutions? Discover how our nearshore, offshore and technology consulting services empower companies <a href="#">Read More</a></p>
+                    <p>Seeking for options for remote development? Learn how our technology, offshore, and nearshore consulting services help businesses in the US, Canada, Europe, and other regions achieve previously unheard-of levels of success with their online marketing.<a href="#">Read More</a></p>
                 </div>
-                <div class="inner-box">
-                    <div class="icon-bg"><img src="images/web-development.png" alt="web-development"></div>
+                <div class="card services-card card-white-text">
+                    <div class="icon"><img src="images/web-development.png" alt="web-development"></div>
                     <h4>Cloud & SaaS solutions</h4>
                     <p>We can support your business goals with scalable Cloud and Software-as-a-Service solutions running on Microsoft Azure and Amazon Web Services. <a href="#">Read More</a></p>
                 </div>
@@ -156,82 +168,71 @@
         </div>
      </div>
 
-     <div class="testimonials-bg">
+      <div class="full-width-container light-gray-bg">
         <div class="container">
 
-            <div class="heading-box">
+            <div class="heading-box heading-light-gray">
                 <h2>Client Testimonials</h2>
-                <span><p class="sub-heading">Helping You Design Success</p></span>
+                <div><p class="sub-heading">Our Work, Their Words</p></div>
             </div>
-
-            <div class="slide-container-box" data-autoplay="true">
-                <div class="slide"> 
-                    <div class="testimonilas">
-                        <div class="testimonilas-inner">
-                            <div class="client-photo"><img src="images/kesav.png" alt="kesav"></div>
-                            <div class="client-name-address">
-                                <h4>King Kesav</h4>
-                                <p>Indore, India</p>
+            <div class="testimonials-bg">
+                <div class="slide-container-box" data-autoplay="true">
+                    <div class="slide"> 
+                        <div class="testimonials">
+                            <div class="testimonilas-inner">
+                               <div class="client-photo"><i class="fa-solid fa-user"></i></div>
+                                <div class="client-name-address">
+                                    <h4>Ehsan Alkhatib</h4>
+                                    <p>Dubai, United Arab Emirates</p>
+                                </div>
+                                
+                                <div class="content">
+                                    <p><i class="fa-solid fa-quote-left"></i>I think the greatest web development team is Pisyst. I was happy with how challenging projects were handled, and the outcome fulfilled my original goals when I started them.<i class="fa-solid fa-quote-right"></i></p>
+                                </div>
+        
+                                <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="shape"><img src="images/shape.png" alt="shape"></div>
                             </div>
-                            
-                            <div class="content">
-                                <p><i class="fa-solid fa-quote-left"></i>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.<i class="fa-solid fa-quote-right"></i></p>
+                    </div>
+                    </div>
+                    <div class="slide">
+                        <div class="testimonials">
+                            <div class="testimonilas-inner">
+                                <div class="client-photo"><i class="fa-regular fa-user"></i></div>
+                                <div class="client-name-address">
+                                    <h4>Hatem Shueb</h4>
+                                    <p>Dubai, United Arab Emirates</p>
+                                </div>
+                                
+                                <div class="content">
+                                    <p><i class="fa-solid fa-quote-left"></i>I highly recommend Pisyst. In the last 10 months, I have solely used Pisyst, despite working with a variety of vendors over the previous ten years.<i class="fa-solid fa-quote-right"></i></p>
+                                </div>
+        
+                                <div class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></div>
+                                <div class="shape"><img src="images/shape.png" alt="shape"></div>
                             </div>
-    
-                            <div class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></div>
-                            <div class="shape"><img src="images/shape.png" alt="shape"></div>
-                        </div>
+                    </div>
+                    </div>
+                    <button class="prev" onclick="prev()"><i class="fa fa-angle-left"></i></button>
+                    <button class="next" onclick="next()"><i class="fa fa-angle-right"></i></button>
                 </div>
-                </div>
-                <div class="slide">
-                    <div class="testimonilas">
-                        <div class="testimonilas-inner">
-                            <div class="client-photo"><img src="images/mukesh.png" alt="kesav"></div>
-                            <div class="client-name-address">
-                                <h4>Mukesh Mishra</h4>
-                                <p>Mumbai, India</p>
-                            </div>
-                            
-                            <div class="content">
-                                <p><i class="fa-solid fa-quote-left"></i>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.<i class="fa-solid fa-quote-right"></i></p>
-                            </div>
-    
-                            <div class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></div>
-                            <div class="shape"><img src="images/shape.png" alt="shape"></div>
-                        </div>
-                </div>
-                </div>
-                <div class="slide">
-                    <div class="testimonilas">
-                        <div class="testimonilas-inner">
-                            <div class="client-photo"><img src="images/mukesh.png" alt="kesav"></div>
-                            <div class="client-name-address">
-                                <h4>Mukesh Mishra</h4>
-                                <p>Mumbai, India</p>
-                            </div>
-                            
-                            <div class="content">
-                                <p><i class="fa-solid fa-quote-left"></i>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.<i class="fa-solid fa-quote-right"></i></p>
-                            </div>
-    
-                            <div class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></div>
-                            <div class="shape"><img src="images/shape.png" alt="shape"></div>
-                        </div>
-                </div>
-                </div>
-                <button class="prev" onclick="prev()"><i class="fa fa-angle-left"></i></button>
-                <button class="next" onclick="next()"><i class="fa fa-angle-right"></i></button>
+                <div class="dots_container" id="indicator"></div>
             </div>
-            <div class="dots_container" id="indicator"></div>
         </div>
        
-     </div>
+     </div> 
 
      <div class="footer">
         <div class="container">
             <div class="two-cols-flex">
                 <div class="left">
-                    <p>© 2023 Company Name. All Rights Reserved.</p>
+                    <p>© 2024 Company Name. All Rights Reserved.</p>
                 </div>
                 <div class="right">
                     <ul>
@@ -245,10 +246,10 @@
      </div>
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-     <script type="text/javascript" src="js/particlesAnimation.js"></script>
-     <script type="text/javascript" src="js/navigation.js"></script>
-     <script type="text/javascript" src="js/carousel.js"></script>
-     <script type="text/javascript" src="js/custom.js"></script> 
+     <script src="js/particlesAnimation.js"></script>
+     <script src="js/navigation.js"></script>
+     <script src="js/carousel.js"></script>
+     <script src="js/custom.js"></script> 
 
     
 </body>

@@ -1,3 +1,9 @@
+.contact-container{
+    background:#052E4F url(../images/contact-image.svg) no-repeat right top;
+    background-position: right 57px;
+    background-size: 31%;
+    height: 264px;
+}
 .contact-flex{
     display: flex;
     width: 100%;
@@ -54,7 +60,7 @@
         width: 40%;
         .icon{
             i{
-            font-size: 36px;
+            font-size: 32px;
             color:$heading-secondary-color
             }
         }

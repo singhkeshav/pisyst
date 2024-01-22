@@ -1,95 +1,11 @@
 
 @import './particles/colors';
 @import './particles/reset';
+@import './particles/common';
 @import './particles/typography';
 @import './particles/header';
-@import './particles/heroSlider';
-@import './particles/about';
-@import './particles/services';
-@import './particles/testimonials';
+@import './particles/home';
 @import './particles/carousel';
 @import './particles/contact';
+@import './particles/hire-developers';
 @import './particles/footer';
-.mt-16{
-    margin-top: 16px;
-}
-a{
-    text-decoration: none;
-}
-div{
-    box-sizing: border-box;
-}
-.container{
-    width: 100%;
-    max-width: 1280px;
-    margin: auto;
-    padding:0 1rem;
-}
-.two-cols-flex{
-    display: flex;
-    gap: 2rem;
-    height: 100%;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    .left{
-        width: 50%;
-    }
-    .right{
-        width: 50%;
-    }
-}
-.heading-box{
-    margin: auto;
-    text-align: center;
-    span{
-        display: inline-block;
-        position: relative;
-        padding: 0 100px;  
-        margin-top: 5px;
-        &::before{
-            position: absolute;
-            display: block;
-            content: '';
-            height:1px ;
-            background: $heading-secondary-color;
-            left: 0;
-            top:calc(50% - 1px);
-            width: 50%;
-            z-index: 1;
-        }
-        &::after{
-            position: absolute;
-            display: block;
-            content: '';
-            height:1px ;
-            background: $heading-secondary-color;
-            right: 0;
-            top:calc(50% - 1px);
-            width: 50%;
-            z-index: 1;
-        }
-    }
-    .sub-heading{
-        color: $heading-secondary-color;
-        font-size: 16px;
-        font-weight: 500;
-        position: relative;
-        background: #fff;
-        z-index: 2;
-        padding: 0 12px;
-    }
-}
-.mid-section-inner{
-    min-height: calc(100vh - 70px);
-    padding-top: 56px;
-    padding-bottom: 30px;
-    .heading-box{
-        margin-top: 40px;
-        span{
-            .sub-heading{
-                background: #f5f5f5;
-            }
-        }
-    }
-}

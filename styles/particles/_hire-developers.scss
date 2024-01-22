@@ -1,0 +1,138 @@
+.hire-developer-container{
+    background:#052E4F url(../images/hire-developers.svg) no-repeat right top;
+    background-position: right 40px;
+    background-size: 27%;
+    height: 264px;
+}
+
+.why-hire{
+    .card{
+        text-align: center;
+        background: #fff;
+        .icon{
+            margin: auto;
+            width: 120px;
+            height: 120px;
+            margin-bottom: 1.5rem;
+           
+        }
+    }
+}
+
+    .technology-row-container{
+        margin-top:32px;
+        .technology-row{
+            margin-bottom: 24px;
+            width: 100%;
+            border: solid 1px #dbe5ed;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            .left-heading{
+                width: 250px;
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+                background:#f5f5f5;
+                border-right: solid 1px #dbe5ed;
+            }
+            .tech-name-container{
+                padding: 1rem;
+                width: calc(100% - 250px);
+                display: flex;
+                gap: 1.5rem;
+                .tech-name-box{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 4px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.25rem;
+                    align-items: center;
+                    justify-content: center;
+
+                    .tech-icon{
+                        width: 54px;
+                        height: 54px;
+                       img{max-width: 100%;}
+                    }
+                    .tech-name{
+                        color:$heading-secondary-color
+                    }
+                }
+            }
+        }
+    }
+
+.process-card{
+    background: #1c629b;
+    display: flex;
+    font-size: 40px;
+    color: $white-text-color;
+    padding: 0.5rem 1rem;
+    position: relative;
+    height: 80px;
+    align-items: center;
+    width: calc(100% - 16px);
+    .process-container{
+        background:$light-gray-bg;
+        border-radius: $radius-sx;
+        font-size: 18px;
+        color: $text-primary-color;
+        display: flex;
+        align-items: center;
+        width:calc(100% - 60px);
+        padding: 1rem;
+        position: absolute;
+        right: -16px;
+        height:calc(100% - 16px);
+        @include light-shadow;
+        border: solid 2px #fff;
+    }
+}
+
+
+.hiring-model-card{
+    background: $light-gray-bg;
+    text-align: center;
+    transform: $transition;
+    &:hover{
+        background: #fff;
+        @include  light-shadow;
+        @include scale;
+    }
+    .icon{
+         width: 60px;
+        height: 60px;
+        margin:20px auto;
+    }
+    ul{
+     text-align: left;
+     margin-top: 32px;
+    margin-left: 90px;
+      li{
+        list-style: none;
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-left: 24px;
+        i{
+        position: absolute;
+        top: 0;
+        left: 0;
+        }
+        }
+}
+.button{
+    background:$heading-primary-color;
+    color: #fff;
+    padding:0.75rem 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+     margin-bottom: 0.25rem;
+    display: inline-block;
+    &:hover{
+        background: $background-primary;
+        }
+    }
+}

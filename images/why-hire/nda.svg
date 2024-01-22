@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="206.708" height="247.867" viewBox="0 0 206.708 247.867">
+  <g id="Group_14" data-name="Group 14" transform="translate(-1591.885 -751.309)">
+    <path id="Path_13" data-name="Path 13" d="M1655.92,723l100.638,51.99s14.1,133.424-100.638,192.531c-83.879-40.419-105.61-136.032-102.133-192.531C1608.548,745,1655.92,723,1655.92,723Z" transform="translate(39.961 29.979)" fill="none" stroke="#052e4f" stroke-width="3"/>
+    <text id="NDA" transform="translate(1700 865)" fill="#052e4f" font-size="70" font-family="Poppins-Regular, Poppins"><tspan x="-72.94" y="0">NDA</tspan></text>
+    <path id="check" d="M81.745,6,28.3,59.45,4,35.155" transform="translate(1657.735 891.547)" fill="none" stroke="#052e4f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+</svg>

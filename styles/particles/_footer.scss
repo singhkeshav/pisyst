@@ -2,14 +2,32 @@
     background: $background-primary;
     padding:24px 0;
     width: 100%;
+    .two-cols-flex{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        @media screen and (min-width:$medium) {
+            flex-direction: row;
+         }
+
+    }
     .left{
+        text-align: center;
+        @media screen and (min-width:$medium) {
+            text-align: left;
+         }
         p{
             color: $white-text-color;
         }
     }
     .right{
         display: flex;
-        justify-content: flex-end;
+        justify-content:center;
+        margin-top: 1rem;
+        @media screen and (min-width:$medium) {
+            justify-content: flex-end;
+            margin-top: 0;
+         }
         ul{
             list-style: none; 
             li{
