@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pisyst</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <script src="https://kit.fontawesome.com/f14a3b3c09.js" crossorigin="anonymous"></script>
 </head>
@@ -24,17 +25,6 @@
                 <nav class="navbar" id="navbar">
                     <ul class="menu" id="menu">
                         <li class="menu-item"><a href="index.html" class="menu-link">HOME</a></li>
-                        <li class="menu-item menu-dropdown">
-                            <span class="menu-link" data-toggle="submenu">SERVICES<i class="fa-solid fa-chevron-down"></i></span>
-                            <ul class="submenu">
-                                <li class="submenu-item"><a href="services/web-development.html" class="submenu-link">Web Development</a></li>
-                                <li class="submenu-item"><a href="services/mobile-app-development.html" class="submenu-link">Mobile App Development</a></li>
-                                <li class="submenu-item"><a href="services/custom-software-development.html" class="submenu-link">Custom Software Development</a></li>
-                                <li class="submenu-item"><a href="services/UI-UX-design.html" class="submenu-link">UI/UX Design</a></li>
-                                <li class="submenu-item"><a href="services/it-outsourcing.html" class="submenu-link">IT Outsourcing</a></li>
-                                <li class="submenu-item"><a href="services/cloud-saas-solution.html" class="submenu-link">Cloud & SaaS solutions</a></li>
-                            </ul>
-                        </li>
                         <li class="menu-item"><a href="hire-developers.html" class="menu-link">HIRE DEVELOPERS</a></li>
                         <li class="menu-item"><a href="contact.html" class="menu-link">CONTACT US</a></li>
                     </ul>
@@ -57,26 +47,32 @@
                     <div class="left">
                         <h4>Send Message</h4>
                         <form>
-                            <div class="form-group">
-                                <label>Full Name</label>
-                                <input type="text" name="fullName" required>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>First Name</label>
+                                    <input type="text" name="firstName" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Last Name</label>
+                                    <input type="text" name="LastName" required>
+                                </div>
                             </div>
 
-                            <div class="form-group">
-                                <label>Phone Number</label>
-                                <input type="tel" name="fullName" required>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Phone Number</label>
+                                    <input type="tel" name="Phone" required>
+                                </div>
                             </div>
-
-                            <div class="form-group">
-                                <label>Email</label>
-                                <input type="email" name="fullName" required>
-                            </div>
-
                             <div class="form-group">
                                 <label>Message</label>
                                 <textarea ></textarea>
                             </div>
-                            
                             <div class="form-group">
                                 <button type="submit" value="Submit" class="submit-button">Submit</button>
                             </div>
@@ -89,8 +85,7 @@
                                 <i class="fa-regular fa-envelope"></i>
                             </div>
                             <div class="value">
-                                <div>mark.m@pisyst.com</div>
-                                <div>kevin.s@pisyst.com</div>
+                                <div>contact@pisyst.com</div>
                             </div>
                         </div>
 
@@ -109,7 +104,7 @@
                                 <i class="fa-brands fa-skype"></i>
                             </div>
                             <div class="value">
-                                <div>admin@pisyst.com</div>
+                                <div>pisyst</div>
                             </div>
                         </div>
 
