@@ -1,16 +1,62 @@
 .contact-container{
-    background:#052E4F url(../images/contact-image.svg) no-repeat right top;
-    background-position: right 57px;
-    background-size: 31%;
-    height: 264px;
+    background:#052E4F;
+    height: auto;
+    padding-right: 15px;
+    
+    @media screen and (min-width:$medium) {
+        background:#052E4F url(../images/contact-image.svg) no-repeat right top;
+        background-position: right 24px;
+        background-size: 47%;
+        padding-right: 440px;
+        height: 210px;
+    }
+
+    @media screen and (min-width:840px) {
+        background-size: 40%;
+    }
+
+    @media screen and (min-width:$large) {
+       
+        background-size: 36%;
+    }
+    @media screen and (min-width:1080px) {
+        background-size: 33%;
+    }
+
+    @media screen and (min-width:$x-large) {
+        height: 264px;
+        background-size: 35.5%;
+    }
+
 }
 .contact-flex{
     display: flex;
     width: 100%;
     margin-top: 2rem;
     gap: 3rem;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    @media screen and (min-width:$medium) {
+        flex-direction: row;
+        margin-bottom: 0rem;
+     }
+        .form-row{
+            display: flex;
+            flex-direction: column;
+            @media screen and (min-width:$large) {
+               flex-direction: row;
+               gap: 1rem;
+            }
+            .form-group{
+                width: 100%;
+            }
+        }
     .left{
-        width: 60%;
+        width: 100%;
+        @media screen and (min-width:$medium) {
+            width: 60%;
+         }
+
         form{
             margin-top: 1.5rem;
         }
@@ -57,11 +103,19 @@
         }
     }
     .right{
-        width: 40%;
+        width: 100%;
+        @media screen and (min-width:$medium) {
+            width: 40%;
+         }
         .icon{
             i{
-            font-size: 32px;
-            color:$heading-secondary-color
+            font-size: 24px;
+            color:$heading-secondary-color;
+
+            @media screen and (min-width:$medium) {
+                font-size: 32px;
+             }
+
             }
         }
         .contact-info{

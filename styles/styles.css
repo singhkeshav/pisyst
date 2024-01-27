@@ -142,12 +142,16 @@ div {
 .three-cols-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 1.25rem;
+  gap: 1rem;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
   .three-cols-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .three-cols-grid {
     gap: 2rem;
   }
 }
@@ -159,7 +163,7 @@ div {
 .heading-box div {
   display: inline-block;
   position: relative;
-  padding: 0 32px;
+  padding: 0 20px;
   margin-top: 5px;
 }
 @media screen and (min-width: 768px) {
@@ -217,12 +221,22 @@ div {
   height: auto;
   border: solid 1px #ddd;
   border-radius: 4px;
-  padding: 1.5rem;
+  padding: 1rem;
   transition: transform 0.5s;
 }
+@media screen and (min-width: 1200px) {
+  .card {
+    padding: 1.5rem;
+  }
+}
 .card .icon {
-  height: 100px;
+  height: 80px;
   width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .card .icon {
+    height: 100px;
+  }
 }
 .card .icon img {
   max-width: 100%;
@@ -230,6 +244,7 @@ div {
 }
 .card h4 {
   margin-top: 1.5rem;
+  line-height: 24px;
 }
 .card p {
   margin-top: 0.75rem;
@@ -245,10 +260,30 @@ div {
   background: #052E4F;
   padding-top: 56px;
   padding-bottom: 30px;
-  height: 320px;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  .inner-page-top {
+    height: 266px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .inner-page-top {
+    height: 320px;
+  }
 }
 .inner-page-top .container {
-  padding-top: 80px;
+  padding-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .inner-page-top .container {
+    padding-top: 56px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .inner-page-top .container {
+    padding-top: 80px;
+  }
 }
 .inner-page-top p {
   color: #ebebeb;
@@ -289,10 +324,10 @@ body {
 p {
   font-size: 14px;
   color: #444;
-  line-height: 24px;
+  line-height: 22px;
   font-weight: 400;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   p {
     font-size: 16px;
     line-height: 24px;
@@ -318,9 +353,15 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 26px;
   color: #2b8ede;
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 h4 {
@@ -340,6 +381,19 @@ h4 {
 }
 .header.headerBg, .header.inner-header {
   background-color: #052E4F;
+}
+.header.inner-header {
+  border-bottom: solid 1px #02192c;
+}
+.header.inner-header::before {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 1px;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  background: #0f3f66;
 }
 .header .logo {
   margin-top: 8px;
@@ -366,9 +420,8 @@ h4 {
     overflow-y: auto;
     visibility: hidden;
     box-shadow: var(--shadow-medium);
-    background-color: #16456b;
+    background-color: #052E4F;
     transition: all 0.5s ease;
-    border-top: solid 1px #4c6070;
   }
   .header .navbar.active {
     left: 0rem;
@@ -555,6 +608,12 @@ h4 {
 }
 @media screen and (min-width: 768px) {
   .hero-slider {
+    height: 540px;
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-slider {
     height: 600px;
     padding-bottom: 0;
   }
@@ -626,10 +685,17 @@ h4 {
 }
 .hero-slider .two-cols-flex .right img {
   max-width: 90%;
+  max-height: 300px;
+}
+@media screen and (min-width: 576px) {
+  .hero-slider .two-cols-flex .right img {
+    max-width: 70%;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero-slider .two-cols-flex .right img {
     max-width: 100%;
+    max-height: inherit;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -663,6 +729,7 @@ h4 {
 }
 .about-container .experience-box h2 {
   font-size: 40px;
+  line-height: 40px;
 }
 
 .services-card {
@@ -718,8 +785,13 @@ h4 {
   padding: 0 1rem 1rem 1rem;
 }
 .testimonials-bg .testimonials .testimonilas-inner p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
+}
+@media screen and (min-width: 768px) {
+  .testimonials-bg .testimonials .testimonilas-inner p {
+    font-size: 16px;
+  }
 }
 .testimonials-bg .testimonials .testimonilas-inner .shape {
   width: 43px;
@@ -763,10 +835,21 @@ h4 {
   margin-top: 20px;
 }
 .testimonials-bg .testimonials .client-name-address h4 {
-  font-size: 24px;
+  font-size: 20px;
+}
+@media only screen and (min-width: 993px) {
+  .testimonials-bg .testimonials .client-name-address h4 {
+    font-size: 24px;
+  }
 }
 .testimonials-bg .testimonials .client-name-address p {
   font-weight: 600;
+  font-size: 14px;
+}
+@media only screen and (min-width: 993px) {
+  .testimonials-bg .testimonials .client-name-address p {
+    font-size: 16px;
+  }
 }
 .testimonials-bg .testimonials .content {
   margin-top: 1rem;
@@ -854,10 +937,39 @@ h4 {
 }
 
 .contact-container {
-  background: #052E4F url(../images/contact-image.svg) no-repeat right top;
-  background-position: right 57px;
-  background-size: 31%;
-  height: 264px;
+  background: #052E4F;
+  height: auto;
+  padding-right: 15px;
+}
+@media screen and (min-width: 768px) {
+  .contact-container {
+    background: #052E4F url(../images/contact-image.svg) no-repeat right top;
+    background-position: right 24px;
+    background-size: 47%;
+    padding-right: 440px;
+    height: 210px;
+  }
+}
+@media screen and (min-width: 840px) {
+  .contact-container {
+    background-size: 40%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contact-container {
+    background-size: 36%;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .contact-container {
+    background-size: 33%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-container {
+    height: 264px;
+    background-size: 35.5%;
+  }
 }
 
 .contact-flex {
@@ -865,9 +977,35 @@ h4 {
   width: 100%;
   margin-top: 2rem;
   gap: 3rem;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .contact-flex {
+    flex-direction: row;
+    margin-bottom: 0rem;
+  }
+}
+.contact-flex .form-row {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 992px) {
+  .contact-flex .form-row {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+.contact-flex .form-row .form-group {
+  width: 100%;
 }
 .contact-flex .left {
-  width: 60%;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .contact-flex .left {
+    width: 60%;
+  }
 }
 .contact-flex .left form {
   margin-top: 1.5rem;
@@ -914,11 +1052,21 @@ h4 {
   background: #2b8ede;
 }
 .contact-flex .right {
-  width: 40%;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .contact-flex .right {
+    width: 40%;
+  }
 }
 .contact-flex .right .icon i {
-  font-size: 32px;
+  font-size: 24px;
   color: #052E4F;
+}
+@media screen and (min-width: 768px) {
+  .contact-flex .right .icon i {
+    font-size: 32px;
+  }
 }
 .contact-flex .right .contact-info {
   display: flex;
@@ -936,21 +1084,56 @@ h4 {
 }
 
 .hire-developer-container {
-  background: #052E4F url(../images/hire-developers.svg) no-repeat right top;
-  background-position: right 40px;
-  background-size: 27%;
-  height: 264px;
+  background: #052E4F;
+  height: auto;
+  padding-right: 15px;
+}
+@media screen and (min-width: 768px) {
+  .hire-developer-container {
+    background: #052E4F url(../images/hire-developers.svg) no-repeat right top;
+    background-position: right 20px;
+    background-size: 32%;
+    padding-right: 280px;
+    height: 210px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hire-developer-container {
+    background-size: 42%;
+    background-position: right 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hire-developer-container {
+    height: 264px;
+  }
 }
 
+@media screen and (min-width: 576px) {
+  .why-hire.three-cols-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .why-hire.three-cols-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
 .why-hire .card {
   text-align: center;
   background: #fff;
 }
 .why-hire .card .icon {
   margin: auto;
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 1200px) {
+  .why-hire .card .icon {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .technology-row-container {
@@ -963,31 +1146,60 @@ h4 {
   border-radius: 8px;
   overflow: hidden;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .technology-row-container .technology-row {
+    flex-direction: row;
+  }
 }
 .technology-row-container .technology-row .left-heading {
-  width: 250px;
+  width: 100%;
   padding: 1rem;
   display: flex;
   align-items: center;
   background: #f5f5f5;
   border-right: solid 1px #dbe5ed;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .technology-row-container .technology-row .left-heading {
+    width: 206px;
+    justify-content: left;
+  }
 }
 .technology-row-container .technology-row .tech-name-container {
-  padding: 1rem;
-  width: calc(100% - 250px);
+  padding: 1rem 0;
+  width: 100%;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 576px) {
+  .technology-row-container .technology-row .tech-name-container {
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .technology-row-container .technology-row .tech-name-container {
+    width: calc(100% - 206px);
+    gap: 1.5rem;
+  }
 }
 .technology-row-container .technology-row .tech-name-container .tech-name-box {
-  width: 100px;
+  width: 96px;
   height: 100px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .technology-row-container .technology-row .tech-name-container .tech-name-box {
+    gap: 1.25rem;
+  }
 }
 .technology-row-container .technology-row .tech-name-container .tech-name-box .tech-icon {
   width: 54px;
@@ -1000,10 +1212,20 @@ h4 {
   color: #052E4F;
 }
 
-.process-card {
+@media screen and (min-width: 768px) {
+  .hiring-process-container .three-cols-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  .hiring-process-container .three-cols-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.hiring-process-container .process-card {
   background: #1c629b;
   display: flex;
-  font-size: 40px;
+  font-size: 32px;
   color: #ebebeb;
   padding: 0.5rem 1rem;
   position: relative;
@@ -1011,7 +1233,12 @@ h4 {
   align-items: center;
   width: calc(100% - 16px);
 }
-.process-card .process-container {
+@media screen and (min-width: 768px) {
+  .hiring-process-container .process-card {
+    font-size: 40px;
+  }
+}
+.hiring-process-container .process-card .process-container {
   background: #f5f5f5;
   border-radius: 4px;
   font-size: 18px;
@@ -1025,6 +1252,11 @@ h4 {
   height: calc(100% - 16px);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   border: solid 2px #fff;
+}
+@media screen and (min-width: 768px) {
+  .hiring-process-container .process-card .process-container {
+    font-size: 16px;
+  }
 }
 
 .hiring-model-card {
@@ -1044,8 +1276,13 @@ h4 {
 }
 .hiring-model-card ul {
   text-align: left;
-  margin-top: 32px;
-  margin-left: 90px;
+  margin-top: 16px;
+  display: inline-block;
+}
+@media screen and (min-width: 768px) {
+  .hiring-model-card ul {
+    margin-top: 32px;
+  }
 }
 .hiring-model-card ul li {
   list-style: none;
@@ -1096,6 +1333,7 @@ h4 {
 }
 .footer .left p {
   color: #ebebeb;
+  font-size: 14px;
 }
 .footer .right {
   display: flex;

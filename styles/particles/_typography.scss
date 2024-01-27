@@ -7,9 +7,9 @@ body{
 p{ 
     font-size: 14px;
     color:$text-primary-color;
-    line-height: 24px;
+    line-height: 22px;
     font-weight: 400;
-    @media screen and (min-width:$medium) {
+    @media screen and (min-width:$x-large) {
         font-size: 16px;
         line-height: 24px;
     }
@@ -28,9 +28,14 @@ h1{
     }
 }
 h2{
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 26px;
     color: $heading-primary-color;
+    @media screen and (min-width:$medium) {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
 }
 h4{
     font-size: 18px;

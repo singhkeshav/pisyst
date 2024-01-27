@@ -10,6 +10,19 @@
     &.headerBg, &.inner-header{
       background-color: $background-primary;
     }
+    &.inner-header{
+      border-bottom: solid 1px #02192c;
+      &::before{
+         position: absolute;
+         display: block;
+         content: '';
+         height: 1px;
+         left: 0;
+         bottom: -2px;
+         width: 100%;
+         background: #0f3f66;
+      }
+    }
     .logo{
       margin-top: 8px;
    }
@@ -38,10 +51,8 @@
            overflow-y: auto;
            visibility: hidden;
            box-shadow: var(--shadow-medium);
-           background-color: #16456b;
+           background-color:$background-primary;
            transition: all 0.5s ease;
-           border-top: solid 1px #4c6070;
-     
            &.active {
               left: 0rem;
               opacity: 1;

@@ -4,10 +4,16 @@
     position: relative;
     overflow: hidden;
     padding-bottom: 5rem;
+   
     @media screen and (min-width:$medium) {
+        height: 540px;
+        padding-bottom: 0;
+     }
+     @media screen and (min-width:$x-large) {
         height: 600px;
         padding-bottom: 0;
      }
+
     p{
         color: $white-text-color;
         margin-top: 1rem;
@@ -65,10 +71,17 @@
                 text-align: right;
                 order: 2;
             }
+
             img{
-                max-width: 90%;
+                max-width: 90%;   
+                max-height: 300px;            
+                @media screen and (min-width:$small) {
+                    max-width: 70%;
+                }
+
                 @media screen and (min-width:$medium) {
                     max-width: 100%;
+                    max-height: inherit;  
                 }
 
                 @media screen and (min-width:$x-large) {
@@ -104,6 +117,7 @@
         }
         h2{
             font-size: 40px;
+            line-height: 40px;
         }
     }
 }
@@ -159,8 +173,11 @@
             position: relative;
             padding: 0 1rem 1rem 1rem;
             p{
-                font-size: 16px;
+                font-size: 14px;
                 line-height: 24px;
+                @media screen and (min-width:$medium) {
+                    font-size: 16px;
+                }
             }
             .shape{
                 width: 43px;
@@ -204,10 +221,17 @@
         .client-name-address{
             margin-top: 20px;
             h4{
-                font-size: 24px;
+                font-size: 20px;
+                @media only screen and (min-width: 993px) {
+                    font-size: 24px;
+                }
             }
             p{
                 font-weight: 600;
+                font-size: 14px;
+                @media only screen and (min-width: 993px) {
+                    font-size: 16px;
+                }
             }
         }
         .content{

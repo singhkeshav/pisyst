@@ -76,12 +76,15 @@ div{
 .three-cols-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1.25rem;
+    gap: 1rem;
     width: 100%;
     @media screen and (min-width:$medium) {
         grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (min-width:$xx-large) {
         gap: 2rem;
     }
+
 }
 
 .heading-box{
@@ -90,7 +93,7 @@ div{
     div{
         display: inline-block;
         position: relative;
-        padding: 0 32px;  
+        padding: 0 20px;  
         margin-top: 5px;
         @media screen and (min-width:$medium) {
             padding: 0 100px;
@@ -156,12 +159,19 @@ div{
     height: auto;
     border: solid 1px #ddd;
     border-radius:$radius-sx;
-    padding: 1.5rem;
+    padding: 1rem;
     transition: $transition;
-   
+    @media screen and (min-width:$x-large) {
+        padding: 1.5rem;
+     }
     .icon{
-        height: 100px;
+        height: 80px;
         width: 100%;
+
+        @media screen and (min-width:$x-large) {
+            height: 100px;
+         }
+
         img{
             max-width: 100%;
             max-height: 100%;
@@ -169,6 +179,7 @@ div{
     }
     h4{
         margin-top: 1.5rem;
+        line-height: 24px;
     }
     p{
         margin-top: 0.75rem;
@@ -189,9 +200,21 @@ div{
     background: $background-primary;
     padding-top: 56px;
     padding-bottom: 30px;
-    height: 320px;
+    height: auto;
+    @media screen and (min-width:$medium) {
+        height: 266px;
+    }
+    @media screen and (min-width:$x-large) {
+        height: 320px;
+    }
     .container{
-        padding-top: 80px;
+        padding-top: 30px;
+        @media screen and (min-width:$medium) {
+            padding-top: 56px;
+        }
+        @media screen and (min-width:$x-large) {
+            padding-top: 80px;
+        }
     }
     p{
         color: $white-text-color;
