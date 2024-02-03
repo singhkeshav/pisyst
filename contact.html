@@ -7,6 +7,50 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <script src="https://kit.fontawesome.com/f14a3b3c09.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script>
+    function setEmptyForm(){
+        document.getElementById('firstName').value = '';
+        document.getElementById('lastName').value = '';
+        document.getElementById('recipientEmail').value = '';
+        document.getElementById('phoneNumber').value = '';
+        document.getElementById('message').value = '';
+    }
+    function sendEmail() {
+           emailjs.init("trsnLVKL7afvNZ4wy");
+            // Get form data
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            var recipientEmail = document.getElementById('recipientEmail')?.value;
+            var message = document.getElementById('message')?.value;
+            var phoneNumber = document.getElementById('phoneNumber')?.value;
+            // Send email using EmailJS
+            emailjs.send("service_ybbhk8h", "template_785260p", {
+                to_email: recipientEmail,
+               // email_subject: subject,
+                subject : "Email Recieved from Pisyst",
+                fullName : firstName+ " " +lastName,
+                message: message,
+                phoneNumber: phoneNumber
+            }).then(function(response) {
+             Toastify({
+                text: "Thank you for connecting. Your message has been submitted successfully, and a member of the support staff will be in touch with you via the phone or email you provided.",
+                backgroundColor: "linear-gradient(to right, #4caf50, #2ecc71)",
+                className: "toastify-success",
+              }).showToast();
+               setEmptyForm();
+            }, function(error) {
+                Toastify({
+                    text: "Email has not been sent successfully due to a technical issue. Please try again later or phone this number: +91 7314682429.",
+                    backgroundColor: "linear-gradient(to right, #f39c12, #e74c3c)",
+                    className: "toastify-warning",
+               }).showToast();
+               setEmptyForm();
+            });
+    }
+    </script>
 </head>
 <body>
     
@@ -26,7 +70,7 @@
                     <ul class="menu" id="menu">
                         <li class="menu-item"><a href="index.html" class="menu-link">HOME</a></li>
                         <li class="menu-item"><a href="hire-developers.html" class="menu-link">HIRE DEVELOPERS</a></li>
-                        <li class="menu-item"><a href="contact.html" class="menu-link">CONTACT US</a></li>
+                        <li class="menu-item"><a href="contact.html" class="menu-link active">CONTACT US</a></li>
                     </ul>
                 </nav>
             </div>
@@ -50,31 +94,31 @@
                             <div class="form-row">
                                 <div class="form-group">
                                     <label>First Name</label>
-                                    <input type="text" name="firstName" required>
+                                    <input type="text" name="firstName" id="firstName" required>
                                 </div>
 
                                 <div class="form-group">
                                     <label>Last Name</label>
-                                    <input type="text" name="LastName" required>
+                                    <input type="text" name="LastName" id="lastName" required>
                                 </div>
                             </div>
 
                             <div class="form-row">
                                 <div class="form-group">
                                     <label>Email</label>
-                                    <input type="email" name="email" required>
+                                    <input type="email" name="email" id="recipientEmail" required>
                                 </div>
                                 <div class="form-group">
                                     <label>Phone Number</label>
-                                    <input type="tel" name="Phone" required>
+                                    <input type="tel" name="Phone" id="phoneNumber" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label>Message</label>
-                                <textarea ></textarea>
+                                <textarea id="message"></textarea>
                             </div>
                             <div class="form-group">
-                                <button type="submit" value="Submit" class="submit-button">Submit</button>
+                                <button type="button" onclick="sendEmail()" value="Submit" class="submit-button">Submit</button>
                             </div>
                         </form>
                     </div>

@@ -256,3 +256,60 @@
         }
     }
 }
+
+.lets-connect{
+    background: url(./../images/lets-connect.svg) no-repeat;
+    margin: auto;
+    height: 112px;
+    width: 307px;
+    background-size: 100%;
+    padding-top: 14px;
+    @media screen and (min-width:480px){
+        width: 442px;
+        padding-top: 36px;
+        height: 154px;
+    }
+
+    @media screen and (min-width:$small){
+        width: 535px;
+        padding-top: 65px;
+        height: 190px;
+    }
+    @media screen and (min-width:$medium){
+        height: 220px;
+        width: 635px;
+        padding-top: 82px;
+    }
+
+    h2{
+        padding-right: 40%;
+        line-height: 20px;
+        font-size: 18px;
+        @media screen and (min-width:480px){
+            font-size: 20px;
+          
+        }
+    }
+    .button{
+        height: 40px;
+        width: auto;
+        padding: 0 1rem;
+        background: #052E4F;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        color: #ebebeb;
+        font-weight: 500;
+        display: inline-block;
+        line-height: 38px; 
+        margin-top: 14px;
+        @media screen and (min-width:480px){
+          margin-top: 30px;
+          
+        }
+        &:hover{
+            background: #2b8ede;
+        }
+    }
+}

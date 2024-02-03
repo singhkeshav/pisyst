@@ -460,6 +460,9 @@ h4 {
   outline: none;
   color: #2b8ede;
 }
+.header .menu-link.active {
+  color: #2b8ede;
+}
 @media only screen and (min-width: 993px) {
   .header .menu-dropdown:hover > .submenu {
     display: block;
@@ -876,6 +879,69 @@ h4 {
   color: #62b162;
 }
 
+.lets-connect {
+  background: url(./../images/lets-connect.svg) no-repeat;
+  margin: auto;
+  height: 112px;
+  width: 307px;
+  background-size: 100%;
+  padding-top: 14px;
+}
+@media screen and (min-width: 480px) {
+  .lets-connect {
+    width: 442px;
+    padding-top: 36px;
+    height: 154px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .lets-connect {
+    width: 535px;
+    padding-top: 65px;
+    height: 190px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .lets-connect {
+    height: 220px;
+    width: 635px;
+    padding-top: 82px;
+  }
+}
+.lets-connect h2 {
+  padding-right: 40%;
+  line-height: 20px;
+  font-size: 18px;
+}
+@media screen and (min-width: 480px) {
+  .lets-connect h2 {
+    font-size: 20px;
+  }
+}
+.lets-connect .button {
+  height: 40px;
+  width: auto;
+  padding: 0 1rem;
+  background: #052E4F;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ebebeb;
+  font-weight: 500;
+  display: inline-block;
+  line-height: 38px;
+  margin-top: 14px;
+}
+@media screen and (min-width: 480px) {
+  .lets-connect .button {
+    margin-top: 30px;
+  }
+}
+.lets-connect .button:hover {
+  background: #2b8ede;
+}
+
 .slide-container-box {
   height: 475px;
   position: relative;
@@ -1147,6 +1213,7 @@ h4 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  background: #fff;
 }
 @media screen and (min-width: 768px) {
   .technology-row-container .technology-row {
@@ -1158,7 +1225,7 @@ h4 {
   padding: 1rem;
   display: flex;
   align-items: center;
-  background: #f5f5f5;
+  background: #fff;
   border-right: solid 1px #dbe5ed;
   justify-content: center;
 }
@@ -1263,9 +1330,9 @@ h4 {
   background: #f5f5f5;
   text-align: center;
   transform: transform 0.5s;
+  background: #fff;
 }
 .hiring-model-card:hover {
-  background: #fff;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   transform: scale(1.05);
 }
